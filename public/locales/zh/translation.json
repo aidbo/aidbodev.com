@@ -1,0 +1,34 @@
+{
+  "pageTitle": "Aidbo 工作室",
+  "pageDescription": "一个软件开发工作室。",
+  "welcome": "<0>Aidbo</0> 工作室",
+  "instructions": "我们开发卓越的软件产品。",
+  "cards": {
+    "products": {
+      "title": "产品",
+      "bilibili-multi-account": {
+        "title": "Bilibili 多账户管理",
+        "body": "给多账号的B站用户快速切换账户"
+      }
+    },
+    "media": {
+      "title": "媒体",
+      "github": {
+        "title": "GitHub",
+        "body": "我们的软件仓库"
+      },
+      "twitter": {
+        "title": "Twitter",
+        "body": "我们的洞察"
+      },
+      "slack": {
+        "title": "Slack",
+        "body": "和我们交流"
+      },
+      "bilibili": {
+        "title": "Bilibili",
+        "body": "我们的视频频道"
+      }
+    }
+  }
+}

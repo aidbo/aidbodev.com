@@ -1,0 +1,34 @@
+{
+  "pageTitle": "Aidbo Studio",
+  "pageDescription": "A Software Studio.",
+  "welcome": "<0>Aidbo</0> Studio",
+  "instructions": "We develop exceptional software products.",
+  "cards": {
+    "products": {
+      "title": "Products",
+      "bilibili-multi-account": {
+        "title": "Bilibili Multi-account",
+        "body": "Quick account switching for Bilibili users with multiple accounts"
+      }
+    },
+    "media": {
+      "title": "Media",
+      "github": {
+        "title": "GitHub",
+        "body": "Our code repository."
+      },
+      "twitter": {
+        "title": "Twitter",
+        "body": "Our insight."
+      },
+      "slack": {
+        "title": "Slack",
+        "body": "Chat with us."
+      },
+      "bilibili": {
+        "title": "Bilibili",
+        "body": "Our video channel."
+      }
+    }
+  }
+}
