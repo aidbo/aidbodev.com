@@ -10,6 +10,16 @@ import Card from '../components/Card.astro';
 			We develop exceptional software products.
 		</p>
 		<ul role="list" class="link-card-grid">
+			<h2 class="grid-one-line">Product</h2>
+			<Card
+				href="https://aidbo.yuque.com/org-wiki-aidbo-ks0srt/release/yqqb9gi4vaeybw3n"
+				title="Bilibili 多账号管理"
+				body="给多账号的B站用户快速切换账户"
+			>
+			</Card>
+		</ul>
+		<ul role="list" class="link-card-grid">
+			<h2 class="grid-one-line">Media</h2>
 			<Card
 				href="https://github.com/aidbo"
 				title="GitHub"
@@ -18,12 +28,17 @@ import Card from '../components/Card.astro';
 			<Card
 				href="https://twitter.com/AidboStudio"
 				title="Twitter"
-				body="Our insights and product launches."
+				body="Our insight."
 			/>
 			<Card
 				href="https://join.slack.com/t/openaidbostudio/shared_invite/zt-1wie8fgdt-kGX_afkeXqE5QWC4Jt95zw"
 				title="Slack"
-				body="Join us on Slack and chat with us."
+				body="Chat with us."
+			/>
+			<Card
+				href="https://space.bilibili.com/10767968"
+				title="Bilibili"
+				body="Our video channel."
 			/>
 		</ul>
 	</main>
@@ -71,5 +86,8 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+	}
+	.grid-one-line {
+		grid-column: 1 / -1;
 	}
 </style>
