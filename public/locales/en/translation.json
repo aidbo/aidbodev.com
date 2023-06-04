@@ -29,6 +29,13 @@
         "title": "Bilibili",
         "body": "Our video channel."
       }
+    },
+    "members": {
+      "title": "Members",
+      "bob": {
+        "title": "Bob",
+        "body": "Full Stack Engineer"
+      }
     }
   }
 }
