@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import { localizeUrl } from "astro-i18next";
 import { t, changeLanguage } from "i18next";
 import { Trans, LanguageSelector } from "astro-i18next/components";
-import { localizeUrl } from "astro-i18next";
 
 changeLanguage("en");
 ---
@@ -11,51 +11,23 @@ changeLanguage("en");
 <Layout title={t("pageTitle")} description={t("pageDescription")}>
 	<main>
 		<LanguageSelector showFlag={true} class="languages" />
+		<a href={localizeUrl("https://aidbodev.com")}>{t("buttons.backtohome")}</a>
 		<h1>
-			<Trans i18nKey="welcome">
-				<span class="text-gradient">Aidbo</span> Studio
-			</Trans>
+			{t("cards.products.bilibili-multi-account.title")}
 		</h1>
 		<p class="instructions">
-			{t("instructions")}
+			{t("cards.products.bilibili-multi-account.body")}
 		</p>
 		<ul role="list" class="link-card-grid">
-			<h2 class="grid-one-line">{t("cards.products.title")}</h2>
 			<Card
-				href={localizeUrl("https://aidbodev.com/bilibili-multi-account/")}
-				title={t("cards.products.bilibili-multi-account.title")}
-				body={t("cards.products.bilibili-multi-account.body")}
-			/>
-		</ul>
-		<ul role="list" class="link-card-grid">
-			<h2 class="grid-one-line">{t("cards.media.title")}</h2>
-			<Card
-				href="https://github.com/aidbo"
-				title={t("cards.media.github.title")}
-				body={t("cards.media.github.body")}
+				href="https://chrome.google.com/webstore/detail/efnnfopebgibgkjlpjjleeamfofhgjgk"
+				title={t("cards.products.bilibili-multi-account.links.chrome")}
+				body={t("cards.products.bilibili-multi-account.links.add-to-browser")}
 			/>
 			<Card
-				href="https://twitter.com/AidboStudio"
-				title={t("cards.media.twitter.title")}
-				body={t("cards.media.twitter.body")}
-			/>
-			<Card
-				href="https://join.slack.com/t/openaidbostudio/shared_invite/zt-1wie8fgdt-kGX_afkeXqE5QWC4Jt95zw"
-				title={t("cards.media.slack.title")}
-				body={t("cards.media.slack.body")}
-			/>
-			<Card
-				href="https://space.bilibili.com/10767968"
-				title={t("cards.media.bilibili.title")}
-				body={t("cards.media.bilibili.body")}
-			/>
-		</ul>
-		<ul role="list" class="link-card-grid">
-			<h2 class="grid-one-line">{t("cards.members.title")}</h2>
-			<Card
-				href="https://github.com/zhengbangbo"
-				title={t("cards.members.bob.title")}
-				body={t("cards.members.bob.body")}
+				href="https://aidbo.yuque.com/org-wiki-aidbo-ks0srt/release/yqqb9gi4vaeybw3n"
+				title={t("cards.products.bilibili-multi-account.links.release-doc")}
+				body={t("cards.products.bilibili-multi-account.links.read-the-doc")}
 			/>
 		</ul>
 	</main>

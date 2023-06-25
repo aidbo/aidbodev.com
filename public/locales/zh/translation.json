@@ -2,13 +2,22 @@
   "pageTitle": "Aidbo 工作室",
   "pageDescription": "一个软件开发工作室。",
   "welcome": "<0>Aidbo</0> 工作室",
-  "instructions": "我们开发卓越的软件产品。",
+  "instructions": "我们开发易用的软件产品。",
+  "buttons": {
+    "backtohome": "回到首页"
+  },
   "cards": {
     "products": {
       "title": "产品",
       "bilibili-multi-account": {
-        "title": "Bilibili 多账户管理",
-        "body": "给多账号的B站用户快速切换账户"
+        "title": "哔哩哔哩多账户工具",
+        "body": "给多账号的B站用户快速切换账户",
+        "links": {
+          "chrome": "谷歌 Chrome",
+          "add-to-browser": "安装浏览器扩展",
+          "release-doc": "发布文档",
+          "read-the-doc": "查看版本更新日志"
+        }
       }
     },
     "media": {

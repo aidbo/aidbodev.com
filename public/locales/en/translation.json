@@ -2,13 +2,22 @@
   "pageTitle": "Aidbo Studio",
   "pageDescription": "A Software Studio.",
   "welcome": "<0>Aidbo</0> Studio",
-  "instructions": "We develop exceptional software products.",
+  "instructions": "We develop easy-to-use software products.",
+  "buttons": {
+    "backtohome": "Back to Home"
+  },
   "cards": {
     "products": {
       "title": "Products",
       "bilibili-multi-account": {
         "title": "Bilibili Multi-account",
-        "body": "Quick account switching for Bilibili users with multiple accounts"
+        "body": "Quick account switching for Bilibili users with multiple accounts",
+        "links": {
+          "chrome": "Google Chrome",
+          "add-to-browser": "Install the browser extension",
+          "release-doc": "Release Doc",
+          "read-the-doc": "Review the version changelog"
+        }
       }
     },
     "media": {
