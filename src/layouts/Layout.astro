@@ -23,6 +23,15 @@ const { title, description } = Astro.props;
 		<HeadHrefLangs />
 		<title>{title}</title>
 	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P55GC4M3F8"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-P55GC4M3F8');
+	</script>
 	<body>
 		<slot />
 	</body>
