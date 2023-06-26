@@ -22,16 +22,28 @@ const { title, description } = Astro.props;
 		<link rel="sitemap" href="/sitemap-index.xml">
 		<HeadHrefLangs />
 		<title>{title}</title>
-	</head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P55GC4M3F8"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-P55GC4M3F8"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'G-P55GC4M3F8');
-	</script>
+			gtag('config', 'G-P55GC4M3F8');
+		</script>
+		<!-- 百度统计 -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?727d3f2b5d7613b61965e178c5aaeec0";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+			</script>
+
+	</head>
+
 	<body>
 		<slot />
 	</body>
