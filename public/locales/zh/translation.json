@@ -37,6 +37,10 @@
       "bilibili": {
         "title": "Bilibili",
         "body": "我们的视频频道"
+      },
+      "youtube": {
+        "title": "Youtube",
+        "body": "我们的视频频道"
       }
     },
     "members": {

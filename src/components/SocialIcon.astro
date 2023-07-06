@@ -1,0 +1,47 @@
+---
+export interface Props {
+	href: string;
+  title: string;
+  icon: string;
+}
+
+import { Icon } from 'astro-icon'
+
+const { href, icon, title } = Astro.props;
+---
+
+<li class="link-card" title={title}>
+	<a href={href} accesskey={title}>
+    <Icon name={icon} />
+	</a>
+</li>
+<style>
+	.link-card {
+		list-style: none;
+		display: flex;
+		padding: 0.25rem;
+		background-color: white;
+		background-image: none;
+		background-size: 400%;
+		border-radius: 0.6rem;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+	}
+	.link-card > a {
+		width: 100%;
+		text-decoration: none;
+		padding: 0.2rem 0.45rem;
+		border-radius: 0.35rem;
+		color: #111;
+		background-color: white;
+		opacity: 0.8;
+	}
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+		background-image: var(--accent-gradient);
+	}
+	.link-card:is(:hover, :focus-within) h2 {
+		color: rgb(var(--accent));
+	}
+</style>

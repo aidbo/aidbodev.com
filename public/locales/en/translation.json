@@ -37,6 +37,10 @@
       "bilibili": {
         "title": "Bilibili",
         "body": "Our video channel."
+      },
+      "youtube": {
+        "title": "Youtube",
+        "body": "Our video channel."
       }
     },
     "members": {

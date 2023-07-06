@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import SocialIcon from "../components/SocialIcon.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans, LanguageSelector } from "astro-i18next/components";
 import { localizePath } from "astro-i18next";
+import { Icon } from "astro-icon";
 
 changeLanguage("en");
 ---
@@ -19,35 +21,18 @@ changeLanguage("en");
 		<p class="instructions">
 			{t("instructions")}
 		</p>
+		<ul role="list" class="social-icon-grid">
+			<SocialIcon href="https://twitter.com/AidboStudio" icon="mdi:twitter" title={t("cards.media.twitter.title")}/>
+			<SocialIcon href="https://www.youtube.com/@AidboStudio" icon="mdi:youtube" title={t("cards.media.youtube.title")}/>
+			<SocialIcon href="https://space.bilibili.com/10767968" icon="ri:bilibili-line" title={t("cards.media.bilibili.title")}/>
+			<SocialIcon href="https://github.com/aidbo" icon="mdi:github" title={t("cards.media.github.title")}/>
+		</ul>
 		<ul role="list" class="link-card-grid">
 			<h2 class="grid-one-line">{t("cards.products.title")}</h2>
 			<Card
 				href={localizePath("/bilibili-multi-account/")}
 				title={t("cards.products.bilibili-multi-account.title")}
 				body={t("cards.products.bilibili-multi-account.body")}
-			/>
-		</ul>
-		<ul role="list" class="link-card-grid">
-			<h2 class="grid-one-line">{t("cards.media.title")}</h2>
-			<Card
-				href="https://github.com/aidbo"
-				title={t("cards.media.github.title")}
-				body={t("cards.media.github.body")}
-			/>
-			<Card
-				href="https://twitter.com/AidboStudio"
-				title={t("cards.media.twitter.title")}
-				body={t("cards.media.twitter.body")}
-			/>
-			<Card
-				href="https://join.slack.com/t/openaidbostudio/shared_invite/zt-1wie8fgdt-kGX_afkeXqE5QWC4Jt95zw"
-				title={t("cards.media.slack.title")}
-				body={t("cards.media.slack.body")}
-			/>
-			<Card
-				href="https://space.bilibili.com/10767968"
-				title={t("cards.media.bilibili.title")}
-				body={t("cards.media.bilibili.body")}
 			/>
 		</ul>
 		<ul role="list" class="link-card-grid">
@@ -104,7 +89,20 @@ changeLanguage("en");
 		gap: 1rem;
 		padding: 0;
 	}
+	.social-icon-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 3rem);
+		gap: 0.5rem;
+		padding: 0;
+	}
 	.grid-one-line {
 		grid-column: 1 / -1;
+	}
+	.social-icon {
+		height: 2rem;
+		width: 2rem;
+	}
+	.social-icon:hover {
+		opacity: 40%;
 	}
 </style>
