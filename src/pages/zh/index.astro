@@ -3,18 +3,18 @@ import Layout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans, LanguageSelector } from "astro-i18next/components";
-import { localizeUrl } from "astro-i18next";
+import { localizePath } from "astro-i18next";
 
 changeLanguage("zh");
 ---
 
 <Layout title={t("pageTitle")} description={t("pageDescription")}>
 	<main>
-		<LanguageSelector showFlag={true} class="languages" />
 		<h1>
 			<Trans i18nKey="welcome">
 				<span class="text-gradient">Aidbo</span> Studio
 			</Trans>
+			<LanguageSelector showFlag={true} class="languages" />
 		</h1>
 		<p class="instructions">
 			{t("instructions")}
@@ -22,7 +22,7 @@ changeLanguage("zh");
 		<ul role="list" class="link-card-grid">
 			<h2 class="grid-one-line">{t("cards.products.title")}</h2>
 			<Card
-				href={localizeUrl("https://aidbodev.com/bilibili-multi-account/")}
+				href={localizePath("/bilibili-multi-account/")}
 				title={t("cards.products.bilibili-multi-account.title")}
 				body={t("cards.products.bilibili-multi-account.body")}
 			/>
